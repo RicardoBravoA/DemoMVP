@@ -12,7 +12,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
-import com.rba.demomvp.MainActivity;
+import com.rba.demomvp.product.ProductActivity;
 import com.rba.demomvp.R;
 import com.rba.demomvp.storage.SessionManager;
 import com.rba.demomvp.util.Constant;
@@ -128,7 +128,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
 
     @Override
     public void nextActivity() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, ProductActivity.class));
         finish();
     }
 

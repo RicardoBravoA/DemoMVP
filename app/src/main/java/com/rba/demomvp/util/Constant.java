@@ -6,7 +6,6 @@ package com.rba.demomvp.util;
 
 
 public class Constant {
-    public static final String URL_USER_LOGIN = "user/login";
     public static final String KEY_SUCCESS = "success";
 
     public static final String KEY_EMAIL = "email";

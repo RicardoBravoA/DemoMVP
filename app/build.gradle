@@ -17,11 +17,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField "String", "BASE_URL", '"http://172.18.60.67:8888/EcommerceApi/v1/"'
+            buildConfigField "String", "USER_LOGIN", '"user/login"'
+            buildConfigField "String", "URL_PRODUCT", '"product"'
         }
 
         debug {
             minifyEnabled false
             buildConfigField "String", "BASE_URL", '"http://172.18.60.67:8888/EcommerceApi/v1/"'
+            buildConfigField "String", "USER_LOGIN", '"user/login"'
+            buildConfigField "String", "URL_PRODUCT", '"product"'
         }
 
     }
@@ -40,4 +44,7 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit-converters:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
